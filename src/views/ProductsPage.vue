@@ -13,24 +13,32 @@
           <button>View Details</button>
         </router-link>
       </div>
+      <div class="foot">
+    </div>
     </div>
   </div>
 </template>
 
 <script>
-import { products } from '../data';
+import axios from 'axios';
 
 export default {
     name: 'ProductsPage',
     data() {
       return {
-        products,
+        products:[],
       };
+    },
+    async created() {
+    const result = await axios.get('/api/products');
+    const products = result.data;
+    this.products = products;
     }
 };
 </script>
 
 <style scoped>
+
   .grid-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +49,7 @@ export default {
   .product-item {
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0px 2px 5px #888;
+    box-shadow: 0px 2px 5px#3A506B;
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;

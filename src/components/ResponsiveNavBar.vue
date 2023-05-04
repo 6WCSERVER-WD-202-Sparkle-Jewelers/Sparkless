@@ -24,11 +24,15 @@
         </li>
         <!-- About -->
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <router-link to="/about" id="about-link">
+            <h4>About</h4>
+          </router-link>
         </li>
         <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <router-link to="/contact" id="about-link">
+            <h4>Contact</h4>
+          </router-link>
         </li>
       </ul>
         <div class="nav-icon">

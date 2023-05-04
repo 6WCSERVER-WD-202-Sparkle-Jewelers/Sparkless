@@ -29,14 +29,21 @@ export default {
   }
 
   button {
-    background-color: black;
+    background-color: #0B132B;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: #f6edea;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     outline: 0;
     padding: 16px;
+  }
+  button:hover,
+  button:focus,
+  button:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   }
 </style>
