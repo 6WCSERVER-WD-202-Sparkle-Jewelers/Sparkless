@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### For Sparkless-Back-End Compiles and hot-reloads for development
+```
+npm run dev
+```
